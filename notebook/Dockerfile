@@ -11,4 +11,4 @@ RUN pip install -U pip \
 ENV workdir /home/jovyan
 WORKDIR $workdir
 
-CMD [".local/bin/jupyter", "notebook", "--allow-root", "--port", "8888", "--ip", "0.0.0.0"]
+CMD ["/home/jovyan/.local/bin/jupyter", "notebook", "--allow-root", "--port", "8888", "--ip", "0.0.0.0"]
